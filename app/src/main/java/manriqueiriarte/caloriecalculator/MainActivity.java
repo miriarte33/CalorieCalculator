@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         genderSwitch.setOnCheckedChangeListener(genderSwitchListener);
     }
 
-    private int height = 40;
+    private int height = 48;
     private int weight = 200;
     private int age = 0;
     private int activeDays = 0;
