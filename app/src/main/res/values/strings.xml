@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Calorie Calculator</string>
+    <string name="weight">200lbs</string>
+    <string name="height">4\'0\"</string>
+    <string name="bmr">BMR</string>
+    <string name="Calorie">Daily\nCaloric\nNeed</string>
+    <string name="workoutText">Enter Active Days Per Week</string>
+    <string name="ageText">Enter Age.</string>
+</resources>
