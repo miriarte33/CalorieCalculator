@@ -4,11 +4,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;//for displaying text
 import android.widget.Switch;
+import android.widget.CompoundButton.OnCheckedChangeListener;
 
 import java.text.NumberFormat;
 
@@ -46,6 +48,9 @@ public class MainActivity extends AppCompatActivity {
         //set Listener for weightSeekBar
         SeekBar weightSeekBar = findViewById(R.id.weightSeekBar);
         weightSeekBar.setOnSeekBarChangeListener(weightSeekBarListener);
+
+        //set Listener for genderSwitch
+        genderSwitch.setOnCheckedChangeListener(genderSwitchListener);
     }
 
     private int height = 40;
@@ -173,6 +178,13 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void afterTextChanged(Editable editable) {
 
+        }
+    };
+
+    private final OnCheckedChangeListener genderSwitchListener = new OnCheckedChangeListener() {
+        @Override
+        public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+            calculate();
         }
     };
 }
