@@ -21,7 +21,6 @@ public class bmi extends AppCompatActivity {
         calculateBmiButton = (Button) findViewById(R.id.calculateBmiButton);
         calculateBmiButton.setOnClickListener(calculateBmiButtonListener);
 
-        bmiTextView.setText(0 + " Calories");//set original bmr value
     }
 
     private TextView bmiTextView;//show the calculated BMR

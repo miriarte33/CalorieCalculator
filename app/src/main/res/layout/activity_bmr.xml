@@ -37,13 +37,62 @@
         android:id="@+id/caloricLabelTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="top|right"
+        android:layout_gravity="right"
         android:fontFamily="monospace"
-        android:hint="@string/Calorie"
+        android:hint="To Maintain Weight"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
     <TextView
         android:id="@+id/caloricTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/bmr_background"
+        android:elevation="4dp"
+        android:fontFamily="monospace"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+    <TextView
+        android:id="@+id/loseWeightLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:fontFamily="monospace"
+        android:hint="To Lose 1 lb per Week"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/loseWeightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/bmr_background"
+        android:elevation="4dp"
+        android:fontFamily="monospace"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/gainWeightLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:fontFamily="monospace"
+        android:hint="To Gain 1 lb per Week"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/gainWeightTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_column="1"

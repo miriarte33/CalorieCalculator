@@ -14,6 +14,8 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 public class bmr extends AppCompatActivity {
 
     @Override
@@ -24,6 +26,8 @@ public class bmr extends AppCompatActivity {
         //get TextViews
         bmrTextView = (TextView) findViewById(R.id.bmrTextView);
         caloricTextView = (TextView) findViewById(R.id.caloricTextView);
+        gainWeightTextView = (TextView) findViewById(R.id.gainWeightTextView);
+        loseWeightTextView = (TextView) findViewById(R.id.loseWeightTextView);
 
         //get Buttons
         calculateBmrButton = (Button) findViewById(R.id.calculateBmrButton);
@@ -31,12 +35,17 @@ public class bmr extends AppCompatActivity {
 
         bmrTextView.setText(0 + " Calories");//set original bmr value
         caloricTextView.setText(0 + " Calories");//set original daily caloric intake value
+        gainWeightTextView.setText(0 + " Calories");//set original bmr value
+        loseWeightTextView.setText(0 + " Calories");//set original daily caloric intake value
 
     }
 
     private TextView bmrTextView;//show the calculated BMR
     private TextView caloricTextView;//show the calculated recommended daily caloric intake
+    private TextView gainWeightTextView;
+    private TextView loseWeightTextView;
     private Button calculateBmrButton;
+
 
     private void calculate() {
 
@@ -65,6 +74,8 @@ public class bmr extends AppCompatActivity {
             dailyCaloricIntake = bmr * 1.725;
         }
         caloricTextView.setText((int)dailyCaloricIntake + " Calories");
+        loseWeightTextView.setText(((int)dailyCaloricIntake - 500) + " Calories");
+        gainWeightTextView.setText(((int)dailyCaloricIntake + 500) + " Calories");
     }
 
     private View.OnClickListener calculateBmrButtonListener = new View.OnClickListener() {
