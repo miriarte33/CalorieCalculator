@@ -1,166 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="right"
-    android:columnCount="2"
-    android:useDefaultMargins="true"
+    android:orientation="vertical"
     tools:context="manriqueiriarte.caloriecalculator.MainActivity">
 
-    <EditText
-        android:id="@+id/ageEditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_column="0"
-        android:layout_columnSpan="2"
-        android:digits="0123456789"
-        android:ems="10"
-        android:inputType="number"
-        android:maxLength="2" />
-
     <TextView
-        android:id="@+id/ageTextView"
+        android:id="@+id/welcomeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_column="0"
-        android:layout_columnSpan="2"
-        android:layout_gravity="fill_horizontal"
-        android:layout_row="0"
-        android:background="@color/age_background"
-        android:elevation="4dp"
+        android:layout_gravity="center_horizontal"
         android:fontFamily="monospace"
-        android:hint="@string/ageText"
-        android:padding="12dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        android:gravity="center"
+        android:text="Welcome to the Calorie Calculator"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="50sp" />
 
-    <Switch
-        android:id="@+id/genderSwitch"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_column="0"
-        android:layout_columnSpan="2"
-        android:layout_row="1"
-        android:fontFamily="monospace"
-        android:hint="Gender"
-        android:padding="12dp"
-        android:showText="true"
-        android:switchPadding="15sp"
-        android:textAlignment="viewStart"
-        android:textAllCaps="false"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textOff="♀"
-        android:textOn="♂" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/heightTextView"
-        android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/profileButton"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Edit Profile" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_column="0"
-        android:layout_gravity="center_vertical|right"
-        android:layout_row="2"
-        android:fontFamily="monospace"
-        android:hint="@string/height"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        app:srcCompat="@drawable/dumbbell"
+        android:layout_weight="1"/>
 
-    <SeekBar
-        android:id="@+id/heightSeekBar"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_gravity="fill_horizontal"
-        android:max="96"
-        android:progress="48" />
-
-    <TextView
-        android:id="@+id/weightTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right|center_vertical"
-        android:fontFamily="monospace"
-        android:hint="@string/weight"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-    <SeekBar
-        android:id="@+id/weightSeekBar"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_gravity="fill_horizontal"
-        android:max="400"
-        android:progress="200" />
-
-    <TextView
-        android:id="@+id/bmrLabelTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:fontFamily="monospace"
-        android:hint="@string/bmr"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-    <TextView
-        android:id="@+id/bmrTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_column="1"
-        android:layout_columnSpan="1"
-        android:layout_gravity="fill_horizontal"
-        android:background="@color/bmr_background"
-        android:elevation="4dp"
-        android:fontFamily="monospace"
-        android:gravity="center_vertical"
-        android:padding="12dp"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-    <EditText
-        android:id="@+id/workoutEditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_column="0"
-        android:layout_columnSpan="2"
-        android:digits="01234567"
-        android:ems="10"
-        android:inputType="number"
-        android:maxLength="1" />
-
-    <TextView
-        android:id="@+id/workoutTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_column="0"
-        android:layout_columnSpan="2"
-        android:layout_gravity="fill_horizontal"
-        android:layout_row="5"
-        android:background="@color/age_background"
-        android:elevation="4dp"
-        android:fontFamily="monospace"
-        android:hint="@string/workoutText"
-        android:padding="12dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-    <TextView
-        android:id="@+id/caloricLabelTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top|right"
-        android:fontFamily="monospace"
-        android:hint="@string/Calorie"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-    <TextView
-        android:id="@+id/caloricTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_column="1"
-        android:layout_columnSpan="1"
-        android:layout_gravity="fill_horizontal"
-        android:background="@color/bmr_background"
-        android:elevation="4dp"
-        android:fontFamily="monospace"
-        android:gravity="center_vertical"
-        android:padding="12dp"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-</android.widget.GridLayout>
+</android.widget.LinearLayout>
