@@ -5,3 +5,6 @@ Enter the person's name to save the entry to the system. You can either view all
 
 ## To Run:
 Use Android Studio 3.0.1. Optimized with a Nexus 6 AVD. 
+
+## Sample Run: 
+![Home](sampleImages/Home.png?raw=true "Homepage")
