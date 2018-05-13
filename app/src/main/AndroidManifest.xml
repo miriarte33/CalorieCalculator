@@ -26,6 +26,9 @@
         <activity android:name=".bmi"
             android:launchMode="singleTop">
         </activity>
+        <activity android:name=".ViewListContents"></activity>
+        <activity android:name=".ViewHealthyBmiContents"></activity>
+        <activity android:name=".CaloriesGraph"></activity>
     </application>
 
 </manifest>

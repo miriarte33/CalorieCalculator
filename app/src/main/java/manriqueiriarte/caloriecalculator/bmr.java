@@ -64,15 +64,16 @@ public class bmr extends AppCompatActivity {
         bmrTextView.setText((int)bmr + " Calories");
 
         //setting caloricTextView
-        if (profile.activeDays==0) {
+        if (profile.zero.isChecked()) {
             dailyCaloricIntake = bmr * 1.2;
-        } else if (profile.activeDays >= 1 && profile.activeDays < 3) {
+        } else if (profile.oneToTwo.isChecked()) {
             dailyCaloricIntake = bmr * 1.375;
-        } else if (profile.activeDays >= 3 && profile.activeDays <= 5) {
+        } else if (profile.threeToFive.isChecked()) {
             dailyCaloricIntake = bmr * 1.55;
-        } else {
+        } else if (profile.sixToSeven.isChecked()) {
             dailyCaloricIntake = bmr * 1.725;
         }
+
         caloricTextView.setText((int)dailyCaloricIntake + " Calories");
         loseWeightTextView.setText(((int)dailyCaloricIntake - 500) + " Calories");
         gainWeightTextView.setText(((int)dailyCaloricIntake + 500) + " Calories");
