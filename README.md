@@ -8,3 +8,7 @@ Use Android Studio 3.0.1. Optimized with a Nexus 6 AVD.
 
 ## Sample Run: 
 ![Home](sampleImages/Home.png?raw=true "Homepage")
+![Create Profile](sampleImages/CreateProfile.png?raw=true "Create Profile")
+![View All Entries](sampleImages/ViewAll.png?raw=true "View All Entries")
+![View Healthy Entries](sampleImages/ViewHealthy.png?raw=true "View Healthy Entries")
+![Graph](sampleImages/Graph.png?raw=true "Graph of an Entry")
