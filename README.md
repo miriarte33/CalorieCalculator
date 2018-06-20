@@ -10,8 +10,14 @@ Compile and run using Android Studio 3.0.1. Optimized with a Nexus 6 Android Vir
 Contributions to this app would be greatly appreciated. Any improvements you might have should be communicated to me so I may be on the same page with all potential contributers. If you do choose to help out, thank you so much.
 
 ## Screenshots ## 
+### Home page ### 
 ![Home](sampleImages/Home.png?raw=true "Homepage")
+### Create Profile ###
 ![Create Profile](sampleImages/CreateProfile.png?raw=true "Create Profile")
+### All Entries ### 
 ![View All Entries](sampleImages/ViewAll.png?raw=true "View All Entries")
+### SQL Query of Healthy Entries ###
 ![View Healthy Entries](sampleImages/ViewHealthy.png?raw=true "View Healthy Entries")
+### Graph ### 
+Clicking an entry will get you this graph.
 ![Graph](sampleImages/Graph.png?raw=true "Graph of an Entry")
